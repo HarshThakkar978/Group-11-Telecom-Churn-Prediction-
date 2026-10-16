@@ -4,6 +4,8 @@ Applied Data Science Portfolio, Assignment 1, Option A.
 
 We predict which telecom customers are likely to leave, using the IBM Telco Customer Churn dataset with 7,043 customers. The final model is a random forest, and the notebook also covers feature importance, a fairness check and a business recommendation on who the company should actually contact.
 
+**Note:** the numbers in the notebook text and in the report come from the run saved in this notebook, so please look through the saved results first. You can run all the cells again if you like, but some results can come out a little different, for example the settings the tuning step picks for the random forest, the F1 scores and the number of customers in the business section. The overall findings stay the same.
+
 ## Files
 
 | File | What it is |
@@ -12,26 +14,14 @@ We predict which telecom customers are likely to leave, using the IBM Telco Cust
 | `churn_model.joblib` | the trained random forest, saved together with the cutoff and the column list |
 | `WA_Fn-UseC_-Telco-Customer-Churn.csv` | the dataset |
 | `DATA_SOURCE.md` | where the data came from and what we did to it |
-| `requirements.txt` | python packages needed to run the notebook |
 
 ## How to run
-
-**Google Colab**
 
 1. Open colab.research.google.com and upload `Group_11_Telco_churn_prediction.ipynb`
 2. Click Runtime, then Run all
 3. When the upload box appears, choose `WA_Fn-UseC_-Telco-Customer-Churn.csv`
 
 The last cells of the notebook save `churn_model.joblib` and download it.
-
-**On a laptop**
-
-```
-pip install -r requirements.txt
-jupyter notebook
-```
-
-Put the notebook and the CSV in the same folder, open the notebook and run all cells.
 
 ## Results
 
@@ -45,22 +35,7 @@ It catches 272 of the 374 churners in the test set. A baseline that predicts "st
 
 ## Using the saved model
 
-```python
-import joblib
-
-bundle = joblib.load('churn_model.joblib')
-model = bundle['model']
-cutoff = bundle['cutoff']
-```
-
-New customer data has to go through the `prepare_features` function from section 5 of the notebook first. After that:
-
-```python
-probability = model.predict_proba(prepared_data)[:, 1]
-likely_to_churn = probability >= cutoff
-```
-
-Section 14 of the notebook shows this working on two example customers.
+Section 14 of the notebook loads `churn_model.joblib` and uses it to predict churn for two example customers.
 
 ## Data
 
