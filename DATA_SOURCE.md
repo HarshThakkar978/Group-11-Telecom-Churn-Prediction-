@@ -7,11 +7,11 @@
 **Where we got it:** Kaggle, uploaded by BlastChar
 https://www.kaggle.com/datasets/blastchar/telco-customer-churn
 
-**Accessed:** October 2026
+**Accessed:** 8 October 2026
 
-**File:** `WA_Fn-UseC_-Telco-Customer-Churn.csv`, 7,043 rows and 21 columns. Each row is one customer. The column `Churn` says whether the customer left within the last month, and 26.5% of customers did.
+**File:** `WA_Fn-UseC_-Telco-Customer-Churn.csv`, 7,043 rows and 21 columns. Each row is one customer. The column `Churn` says whether the customer left within the last month and 26.5% of customers did.
 
-The file is used exactly as downloaded. We did not edit the CSV itself, and all the changes below happen inside the notebook.
+The file is used exactly as downloaded. We did not edit the CSV itself and all the changes below happen inside the notebook.
 
 ## Preprocessing
 
@@ -30,4 +30,4 @@ The file is used exactly as downloaded. We did not edit the CSV itself, and all 
 
 ## Splitting
 
-The data was split 60/20/20 into training, validation and test sets with a fixed random seed of 42, stratified by churn so all three sets have the same churn rate. Scaling and encoding are learned from the training data only.
+The data was split 60/20/20 into training, validation and test sets with a fixed random seed of 42, arranged into layers by churn so all three sets have the same churn rate. Scaling and encoding are learned from the training data only.
