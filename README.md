@@ -25,13 +25,13 @@ The last cells of the notebook save `churn_model.joblib` and download it.
 
 ## Results
 
-The final model is a random forest with a cutoff of 0.55. Scores on the test set, which was only used once at the end:
+The final model is a random forest with a cutoff of 0.55. Scores on the test set which was only used once at the end:
 
 | Accuracy | Precision | Recall | F1-score |
 |---|---|---|---|
 | 0.773 | 0.555 | 0.727 | 0.630 |
 
-It catches 272 of the 374 churners in the test set. A baseline that predicts "stays" for everyone has 73.5% accuracy but catches none, which is why we look at recall and F1 more than accuracy.
+It catches 272 of the 374 churners in the test set. A baseline that predicts that the customer will stay for everyone has 73.5% accuracy but catches none. This is why we have to look at recall and F1 more than accuracy.
 
 ## Using the saved model
 
