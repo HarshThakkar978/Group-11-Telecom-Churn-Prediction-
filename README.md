@@ -2,9 +2,9 @@
 
 Group 11 Applied Data Science Portfolio, Assignment 2, Option A.
 
-We predict which telecom customers are likely to leave, using the IBM Telco Customer Churn dataset with 7,043 customers. The final model is a random forest, and the notebook also covers feature importance, a fairness check and a business recommendation on who the company should actually contact.
+We predict which telecom customers are likely to leave (churn) using the IBM Telco Customer Churn dataset with 7,043 customers. The final model is a random forest and the notebook also covers feature importance, a fairness check and a business recommendation on who the company should actually contact.
 
-**Note:** the numbers in the notebook text and in the report come from the run saved in this notebook, so please look through the saved results first. You can run all the cells again if you like, but some results can come out a little different, for example the settings the tuning step picks for the random forest, the F1 scores and the number of customers in the business section. The overall findings stay the same.
+**Note:** the numbers in the notebook text and in the report come from the run saved in this notebook so please look through the saved results first. You can run all the cells again if you like but some results can come out a little different, for example the settings the tuning step picks for the random forest, the F1 scores and the number of customers in the business section. The overall findings stay the same.
 
 ## Files
 
@@ -17,8 +17,8 @@ We predict which telecom customers are likely to leave, using the IBM Telco Cust
 
 ## How to run
 
-1. Open colab.research.google.com and upload `Group_11_Telco_churn_prediction.ipynb`
-2. Click Runtime, then Run all
+1. Open Google Colab and upload `Group_11_Telco_churn_prediction.ipynb`
+2. Click Runtime then Run all
 3. When the upload box appears, choose `WA_Fn-UseC_-Telco-Customer-Churn.csv`
 
 The last cells of the notebook save `churn_model.joblib` and download it.
