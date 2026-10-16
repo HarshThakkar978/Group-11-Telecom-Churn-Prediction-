@@ -1,6 +1,6 @@
 # Telecom Customer Churn Prediction
 
-Applied Data Science Portfolio, Assignment 1, Option A.
+Group 11 Applied Data Science Portfolio, Assignment 2, Option A.
 
 We predict which telecom customers are likely to leave, using the IBM Telco Customer Churn dataset with 7,043 customers. The final model is a random forest, and the notebook also covers feature importance, a fairness check and a business recommendation on who the company should actually contact.
 
